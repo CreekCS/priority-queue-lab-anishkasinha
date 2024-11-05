@@ -1,7 +1,6 @@
 // import statements
 import java.io.File;
 import java.util.PriorityQueue;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class PriorityQueueLab {
     public static void main(String[] args) {
@@ -16,8 +15,8 @@ public class PriorityQueueLab {
             while(!priorityQueue.isEmpty()) {
                 System.out.println(priorityQueue.poll());
             }
-        } catch (FileNotFoundException f) {
-            System.out.println("File not found~");
+        } catch (Exception f) {
+            System.out.println("it\'s not working :(");
         }
     }
 }
